@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>LuxuryHotel a Hotel Template</title>
+    <title>Statement hotel</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -25,7 +24,9 @@
      
       <nav class="navbar navbar-expand-md navbar-dark bg-light">
         <div class="container">
-          <a class="navbar-brand" href="index.html">LuxuryHotel</a>
+              <a class="navbar-brand" href="index.html">
+              <img src="images/ft-logo.png" width="200" height="120" class="d-inline-block align-top" alt="The Statement hotel logo">
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,30 +34,27 @@
           <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="index.php">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="rooms.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rooms</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="rooms.html">Room Videos</a>
-                  <a class="dropdown-item" href="rooms.html">Presidential Room</a>
-                  <a class="dropdown-item" href="rooms.html">Luxury Room</a>
-                  <a class="dropdown-item" href="rooms.html">Deluxe Room</a>
+                <a class="nav-link dropdown-toggle" href="?page=rooms" id="rooms-categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rooms</a>
+                <div class="dropdown-menu" aria-labelledby="rooms-categories">
+                  <a class="dropdown-item" href="?page=rooms">Room Videos</a>
+                  <a class="dropdown-item" href="?page=rooms">Presidential Room</a>
+                  <a class="dropdown-item" href="?page=rooms">Luxury Room</a>
+                  <a class="dropdown-item" href="?page=rooms">Deluxe Room</a>
                 </div>
 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="?page=about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
+                <a class="nav-link" href="?page=contact">Contact</a>
               </li>
 
                <li class="nav-item cta">
-                <a class="nav-link" href="booknow.html"><span>Book Now</span></a>
+                <a class="nav-link" href="?page=booknow"><span>Book Now</span></a>
               </li>
             </ul>
             
@@ -66,13 +64,15 @@
     </header>
     <!-- END header -->
 
+    
+
     <section class="site-hero site-hero-innerpage overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_1.jpg);">
       <div class="container">
         <div class="row align-items-center site-hero-inner justify-content-center">
           <div class="col-md-12 text-center">
 
             <div class="mb-5 element-animate">
-              <h1>Reservation</h1>
+              <h1>Contact Us</h1>
               <p>Discover our world's #1 Luxury Room For VIP.</p>
             </div>
 
@@ -86,51 +86,18 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2 class="mb-5">Reservation Form</h2>
-                <form action="#" method="post">
+            <h2 class="mb-5">Contact Form</h2>
+          <form action="#" method="post">
                   <div class="row">
-                      <div class="col-sm-6 form-group">
-                          
-                          <label for="">Arrival Date</label>
-                          <div style="position: relative;">
-                            <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
-                            <input type='text' class="form-control" id='arrival_date' />
-                          </div>
-                      </div>
-
-                      <div class="col-sm-6 form-group">
-                          
-                          <label for="">Departure Date</label>
-                          <div style="position: relative;">
-                            <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
-                            <input type='text' class="form-control" id='departure_date' />
-                          </div>
-                      </div>
-                      
-                  </div>
-
-
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="room">Room</label>
-                      <select name="" id="room" class="form-control">
-                        <option value="">1 Room</option>
-                        <option value="">2 Rooms</option>
-                        <option value="">3 Rooms</option>
-                        <option value="">4 Rooms</option>
-                        <option value="">5 Rooms</option>
-                      </select>
+                    <div class="col-md-12 form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" class="form-control ">
                     </div>
-
-                    <div class="col-md-6 form-group">
-                      <label for="room">Guests</label>
-                      <select name="" id="room" class="form-control">
-                        <option value="">1 Guest</option>
-                        <option value="">2 Guests</option>
-                        <option value="">3 Guests</option>
-                        <option value="">4 Guests</option>
-                        <option value="">5+ Guests</option>
-                      </select>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" id="phone" class="form-control ">
                     </div>
                   </div>
                   <div class="row">
@@ -141,42 +108,23 @@
                   </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <label for="message">Write a Note</label>
+                      <label for="message">Write Message</label>
                       <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <input type="submit" value="Reserve Now" class="btn btn-primary">
+                      <input type="submit" value="Send Message" class="btn btn-primary">
                     </div>
                   </div>
                 </form>
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-5">
-                <h3 class="mb-5">Featured Room</h3>
-                <div class="media d-block room mb-0">
-              <figure>
-                <img src="images/img_1.jpg" alt="Generic placeholder image" class="img-fluid">
-                <div class="overlap-text">
-                  <span>
-                    Featured Room 
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                  </span>
-                </div>
-              </figure>
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">Presidential Room</a></h3>
-                <ul class="room-specs">
-                  <li><span class="ion-ios-people-outline"></span> 2 Guests</li>
-                  <li><span class="ion-ios-crop"></span> 22 ft <sup>2</sup></li>
-                </ul>
-                <p>Nulla vel metus scelerisque ante sollicitudin. Fusce condimentum nunc ac nisi vulputate fringilla. </p>
-                <p><a href="#" class="btn btn-primary btn-sm">Book Now From $20</a></p>
-              </div>
-            </div>
+                <h3 class="mb-5">Paragraph</h3>
+                <p class="mb-5"><img src="images/img_4.jpg" alt="" class="img-fluid"></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae labore aspernatur cumque inventore voluptatibus odit doloribus! Ducimus, animi perferendis repellat. Ducimus harum alias quas, quibusdam provident ea sed, sapiente quo.</p>
+                <p>Ullam cumque eveniet, fugiat quas maiores, non modi eos deleniti minima, nesciunt assumenda sequi vitae culpa labore nulla! Cumque vero, magnam ab optio quidem debitis dignissimos nihil nesciunt vitae impedit!</p>
               </div>
         </div>
       </div>
@@ -200,13 +148,26 @@
     </section>
     <!-- END section -->
    
-    <footer class="site-footer">
+   <footer class="site-footer">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-4">
-            <h3>Phone Support</h3>
-            <p>24/7 Call us now.</p>
-            <p class="lead"><a href="tel://">+ 1 332 3093 323</a></p>
+          <div class="col-md-6">
+            <div class="widget widget-address">
+                                <h5 class="footer-widget-title decorator">Address</h5>
+                                <div class="address">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                    <p>Plot 1002 1st Avenue, By Shehu Shagari Way, Central Business District, Abuja</p>
+                                </div>
+                                 <div>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+                                    <p><a href="mailto:booking@statementhotel.com">booking@statementhotel.com</a></p>
+                                </div>  
+                                <div>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> 
+                                    <p>Reservations:<br /><a href="tel:+234.0706-815-1023">+234.0706-815-1023</a></p>
+                                </div> 
+                                   
+            </div>
           </div>
           <div class="col-md-4">
             <h3>Connect With Us</h3>
@@ -219,9 +180,9 @@
               <a href="#" class="p-3"><span class="fa fa-youtube-play"></span></a>
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-2">
             <h3>Connect With Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, odio.</p>
+            <p>Get Updates</p>
             <form action="#" class="subscribe">
               <div class="form-group">
                 <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
@@ -233,9 +194,9 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-7 text-center">
-            &copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            
+            <p class="copyright-text">Designed and Managed by <a href="http://www.primeroyalhospitality.com?source="statementhotel.com >Prime Royal Hospitality Services Ltd. </a></p>
+                       
           </div>
         </div>
       </div>
@@ -255,15 +216,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
-
-    <script>
-      
-      $('#arrival_date, #departure_date').datepicker({});
-
-    </script>
-
-    
 
     <script src="js/main.js"></script>
   </body>
