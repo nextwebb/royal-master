@@ -24,5 +24,4 @@
     include_once("views/home.php");//if nothing is clicked atall show this
 }
  include("views/footer.php");
- $pathInPieces = explode('/', $_SERVER['DOCUMENT_ROOT']);
-echo $pathInPieces[0];
+ 
